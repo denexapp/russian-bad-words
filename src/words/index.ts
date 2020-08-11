@@ -1,3 +1,4 @@
+import { Word } from '../types'
 import interjections from './interjections'
 import nouns from './nouns'
 import verbs from './verbs'

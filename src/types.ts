@@ -20,15 +20,15 @@ interface PluralNounForms {
   prepositionalPlural: string
 }
 
-type SingularNoun =
+export type SingularNoun =
   & WordType<'singular noun'>
   & SingularNounForms
 
-type PluralNoun =
+export type PluralNoun =
   & WordType<'plural noun'>
   & SingularNounForms
 
-type Noun =
+export type Noun =
   & WordType<'noun'>
   & SingularNounForms
   & PluralNounForms
@@ -76,14 +76,14 @@ interface ImperativeVerbForms {
 // Imperative verbs use same forms of words as Indivative words
 // Except of second person words
 
-type ImperfectiveVerb =
+export type ImperfectiveVerb =
   & WordType<'imperfective verb'>
   & InvfinitiveVerbForms
   & IndicativePastVerbForms
   & IndicativePresentVerbForms
   & ImperativeVerbForms
 
-type PerfectiveVerb = 
+export type PerfectiveVerb = 
   & WordType<'perfective verb'>
   & InvfinitiveVerbForms
   & IndicativePastVerbForms
@@ -94,8 +94,8 @@ interface InterjectionForms {
   interjection: string
 }
 
-type Interjection = 
+export type Interjection = 
   & WordType<'interjection'>
   & InterjectionForms
 
-type Word = SingularNoun | PluralNoun | Noun | ImperfectiveVerb | PerfectiveVerb | Interjection
+export type Word = SingularNoun | PluralNoun | Noun | ImperfectiveVerb | PerfectiveVerb | Interjection

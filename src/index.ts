@@ -1,3 +1,4 @@
+import { Word } from './types'
 import words from './words'
 
 const flatten = (words: Array<Word>): Array<string> => words

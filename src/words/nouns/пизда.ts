@@ -1,3 +1,5 @@
+import { Noun } from '../../types'
+
 const пизда: Noun = {
   type: 'noun',
   nominativeSingular: 'пизда',

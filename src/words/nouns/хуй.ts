@@ -1,3 +1,5 @@
+import { Noun } from '../../types'
+
 const хуй: Noun = {
   type: 'noun',
   nominativeSingular: 'хуй',

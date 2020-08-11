@@ -1,3 +1,4 @@
+import { Noun, PluralNoun, SingularNoun } from '../../types'
 import пизда from './пизда'
 import хуй from './хуй'
 

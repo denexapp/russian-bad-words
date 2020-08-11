@@ -1,3 +1,4 @@
+import { Interjection } from '../../types'
 import бля from './бля'
 
 const interjections: Array<Interjection> = [

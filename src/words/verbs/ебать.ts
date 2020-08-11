@@ -1,3 +1,5 @@
+import { ImperfectiveVerb } from '../../types'
+
 const ебать: ImperfectiveVerb = {
   type: 'imperfective verb',
   infinitive: 'ебать',
