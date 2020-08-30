@@ -1,8 +1,10 @@
 import { Interjection } from '../../types'
 import бля from './бля'
+import блять from './блять'
 
 const interjections: Array<Interjection> = [
-  бля
+  бля,
+  блять
 ]
 
 export default interjections

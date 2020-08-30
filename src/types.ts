@@ -83,7 +83,7 @@ export type ImperfectiveVerb =
   & IndicativePresentVerbForms
   & ImperativeVerbForms
 
-export type PerfectiveVerb = 
+export type PerfectiveVerb =
   & WordType<'perfective verb'>
   & InvfinitiveVerbForms
   & IndicativePastVerbForms
@@ -94,8 +94,26 @@ interface InterjectionForms {
   interjection: string
 }
 
-export type Interjection = 
+export type Interjection =
   & WordType<'interjection'>
   & InterjectionForms
 
-export type Word = SingularNoun | PluralNoun | Noun | ImperfectiveVerb | PerfectiveVerb | Interjection
+interface AdverbForms {
+  adverb: string
+}
+
+interface QualifyingAdverbForms {
+  comparative: string
+  superlative: string
+}
+
+export type NonQualifyingAdverb =
+  & WordType<'non qualifying adverb'>
+  & AdverbForms
+
+export type QualifyingAdverb =
+  & WordType<'qualifying adverb'>
+  & AdverbForms
+  & QualifyingAdverbForms
+
+export type Word = SingularNoun | PluralNoun | Noun | ImperfectiveVerb | PerfectiveVerb | Interjection | NonQualifyingAdverb | QualifyingAdverb
