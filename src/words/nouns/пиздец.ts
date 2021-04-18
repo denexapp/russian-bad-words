@@ -13,7 +13,7 @@ const пиздец: Noun = {
   dativePlural: 'пиздецам',
   accusativePlural: 'пиздецы',
   instrumentalPlural: 'пиздецами',
-  prepositionalPlural: 'пиздецах'
+  prepositionalPlural: 'пиздецах',
 }
 
 export default пиздец

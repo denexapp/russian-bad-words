@@ -13,7 +13,7 @@ const хуй: Noun = {
   dativePlural: 'хуям',
   accusativePlural: 'хуи',
   instrumentalPlural: 'хуями',
-  prepositionalPlural: 'хуях'
+  prepositionalPlural: 'хуях',
 }
 
 export default хуй

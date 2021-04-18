@@ -4,7 +4,7 @@ const хуёво: QualifyingAdverb = {
   type: 'qualifying adverb',
   adverb: 'хуёво',
   comparative: 'хуёвее',
-  superlative: 'хуёвейше'
+  superlative: 'хуёвейше',
 }
 
 export default хуёво

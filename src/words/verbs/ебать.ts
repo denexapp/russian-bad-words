@@ -14,7 +14,7 @@ const ебать: ImperfectiveVerb = {
   indicativePresentPluralSecondPerson: 'ебёте',
   indicativePresentPluralThirdPerson: 'ебут',
   imperativeSingularSecondPerson: 'еби',
-  imperativePluralSecondPerson: 'ебите'
+  imperativePluralSecondPerson: 'ебите',
 }
 
 export default ебать

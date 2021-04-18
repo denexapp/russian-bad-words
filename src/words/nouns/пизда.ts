@@ -13,7 +13,7 @@ const пизда: Noun = {
   dativePlural: 'пиздам',
   accusativePlural: 'пизды',
   instrumentalPlural: 'пиздами',
-  prepositionalPlural: 'пиздах'
+  prepositionalPlural: 'пиздах',
 }
 
 export default пизда

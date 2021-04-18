@@ -20,18 +20,11 @@ interface PluralNounForms {
   prepositionalPlural: string
 }
 
-export type SingularNoun =
-  & WordType<'singular noun'>
-  & SingularNounForms
+export type SingularNoun = WordType<'singular noun'> & SingularNounForms
 
-export type PluralNoun =
-  & WordType<'plural noun'>
-  & SingularNounForms
+export type PluralNoun = WordType<'plural noun'> & SingularNounForms
 
-export type Noun =
-  & WordType<'noun'>
-  & SingularNounForms
-  & PluralNounForms
+export type Noun = WordType<'noun'> & SingularNounForms & PluralNounForms
 
 interface InvfinitiveVerbForms {
   infinitive: string
@@ -76,27 +69,23 @@ interface ImperativeVerbForms {
 // Imperative verbs use same forms of words as Indivative words
 // Except of second person words
 
-export type ImperfectiveVerb =
-  & WordType<'imperfective verb'>
-  & InvfinitiveVerbForms
-  & IndicativePastVerbForms
-  & IndicativePresentVerbForms
-  & ImperativeVerbForms
+export type ImperfectiveVerb = WordType<'imperfective verb'> &
+  InvfinitiveVerbForms &
+  IndicativePastVerbForms &
+  IndicativePresentVerbForms &
+  ImperativeVerbForms
 
-export type PerfectiveVerb =
-  & WordType<'perfective verb'>
-  & InvfinitiveVerbForms
-  & IndicativePastVerbForms
-  & IndicativeFutureVerbForms
-  & ImperativeVerbForms
+export type PerfectiveVerb = WordType<'perfective verb'> &
+  InvfinitiveVerbForms &
+  IndicativePastVerbForms &
+  IndicativeFutureVerbForms &
+  ImperativeVerbForms
 
 interface InterjectionForms {
   interjection: string
 }
 
-export type Interjection =
-  & WordType<'interjection'>
-  & InterjectionForms
+export type Interjection = WordType<'interjection'> & InterjectionForms
 
 interface AdverbForms {
   adverb: string
@@ -107,13 +96,23 @@ interface QualifyingAdverbForms {
   superlative: string
 }
 
-export type NonQualifyingAdverb =
-  & WordType<'non qualifying adverb'>
-  & AdverbForms
+export type NonQualifyingAdverb = WordType<'non qualifying adverb'> & AdverbForms
 
-export type QualifyingAdverb =
-  & WordType<'qualifying adverb'>
-  & AdverbForms
-  & QualifyingAdverbForms
+export type QualifyingAdverb = WordType<'qualifying adverb'> & AdverbForms & QualifyingAdverbForms
 
-export type Word = SingularNoun | PluralNoun | Noun | ImperfectiveVerb | PerfectiveVerb | Interjection | NonQualifyingAdverb | QualifyingAdverb
+interface PredicativeForms {
+  predicative: string
+}
+
+export type Predicative = WordType<'predicative'> & PredicativeForms
+
+export type Word =
+  | SingularNoun
+  | PluralNoun
+  | Noun
+  | ImperfectiveVerb
+  | PerfectiveVerb
+  | Interjection
+  | NonQualifyingAdverb
+  | QualifyingAdverb
+  | Predicative

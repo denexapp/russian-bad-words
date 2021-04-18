@@ -13,7 +13,7 @@ const блядь: Noun = {
   dativePlural: 'блядям',
   accusativePlural: 'блядей',
   instrumentalPlural: 'блядями',
-  prepositionalPlural: 'блядях'
+  prepositionalPlural: 'блядях',
 }
 
 export default блядь

@@ -13,7 +13,7 @@ const сука: Noun = {
   dativePlural: 'сукам',
   accusativePlural: 'сук',
   instrumentalPlural: 'суками',
-  prepositionalPlural: 'суках'
+  prepositionalPlural: 'суках',
 }
 
 export default сука
